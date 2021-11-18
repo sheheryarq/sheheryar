@@ -1,0 +1,26 @@
+ASSIGNMENT 6
+
+DECLARE Str1, Str2 : String
+DECLARE F2, L2 : String
+DECLARE Length : Integer
+        Str1 <== ""
+        Str2 <== ""
+        F2 <== ""
+        L2 <== ""
+        Length <== 0
+        OUTPUT("Enter String: ")
+        INPUT Str1
+        Length = Length(Str1)
+
+        If Length <= 2 
+             Then
+            OUTPUT("The Processed String is: ", Str1)
+        ElseIf Length > 2 
+             Then
+            F2 = Left(Str1, 2)
+            L2 = Right(Str1, 2)
+            Str2 = F2 + L2
+
+            OUTPUT("The processed String is: ", Str2)
+
+        End If

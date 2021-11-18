@@ -1,0 +1,23 @@
+ASSIGNMENT 10
+DECLARE Str1, Str2, L3, UL3 : String
+        DECLARE length : Integer
+        Str1 <== ""
+        Str2 <== ""
+        L3 <== ""
+        length <== 0
+        UL3 <== ""
+        OUTPUT("add Text: ")
+
+        INPUT Str1
+        length = Length(Str1)
+        L3 = Right(Str1, 3)
+        UL3 = UCase(L3)
+
+        If length < 3 Then
+            Str2 = Str2 + Str1
+        ElseIf length >= 3 And UL3 = "ING" Then
+            Str2 = Str2 + Str1 + "ly"
+        ElseIf length >= 3 Then
+            Str2 = Str2 + Str1 + "ing"
+        End If
+        OUTPUT("The processed text is: " & Str2)

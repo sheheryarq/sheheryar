@@ -1,0 +1,14 @@
+assignment 2
+
+DECLARE donuts : Integer
+donuts <== 0
+OUTPUT "Enter Number of Donouts: "
+INPUT donots
+            If donots < 10 
+            Then
+            OUTPUT "The Number of donouts: ",donots
+            ElseIf donots >= 10 Then
+            OUTPUT "The number of donouts: Many"
+
+         End If
+   END If

@@ -1,0 +1,31 @@
+ASSIGNMENT 8
+ DECLARE Str1 : String
+        DECLARE alphacounter, digitscounter, sccasecounter, i : Integer
+        DECLARE thischar : CHARACTER
+        Str1 <== ""
+        alphacounter <== 0
+        digitscounter <== 0
+        sccasecounter <== 0
+        i <== 0
+        thischar <== ''
+        OUTPUT("Enter Sentence: ")
+        INPUT Str1
+        Str1 = UPPERCase(Str1)
+
+        For i = 1 To Len(Str1)
+            thischar = Mid(Str1, i, 1)
+
+            If thischar >= 'A' And thischar <= 'Z' Then
+               alphacounter = alphacounter + 1
+               ElseIf thischar >= "0" And thischar <= "9" Then
+               digitscounter = digitscounter + 1
+               Else
+               sccasecounter = sccasecounter + 1
+
+             END If
+            END if
+           END if
+  Next
+  OUTPUTLine("The Number of alphabets in entered sentence are: " ,alphacounter)
+  OUTPUTLine("The Number of digits in entered sentence are: " ,digitscounter)
+  OUTPUTLine("The Number of specialcaseCHARACTER in entered sentence are: " ,sccasecounter)

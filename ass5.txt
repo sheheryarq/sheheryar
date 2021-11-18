@@ -1,0 +1,22 @@
+ASSIGNMENT 5
+
+ DECLARE Str1 : String
+ DECLARE vowelcounter : Integer
+ DECLARE i : Integer
+ DECLARE thischar : CHARACTER
+        Str1 <== ""
+        vowelcounter <== 0
+        i <== 0
+        thischar <== ''
+        OUTPUT("enter text: ")
+        INPUT Str1
+        Str1 = UPPERCASE(Str1)
+        For i = 1 To Len(Str1)
+            thischar = Mid(Str1, i, 1)
+
+        If thischar = "A" Or thischar = "E" Or thischar = "I" Or thischar = "O" Or thischar = "U" 
+                 Then
+                vowelcounter = vowelcounter + 1
+        End If
+        Next
+        OUTPUT("Number of vowels are " & vowelcounter)

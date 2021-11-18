@@ -1,0 +1,33 @@
+ASSIGNMENT 4:
+
+DECLARE highchar, char1, char2 : CHARACTER
+DECLARE count1, count2, highest, Count : Integer
+DECLARE sentence : String
+
+        sentence <== ""
+        highchar <== ''
+        char1 <== ''
+        char2 <== ''
+        count1 <== 0
+        count2 <== 0
+        highest <== 0
+        Count <== 0
+        OUTPUT "Enter the sentence: "
+        INPUT sentence
+        For count1 = 1 To Length(sentence)
+            char1 = Mid(sentence, count1, 1)
+            Count = 0
+            For count2 = 1 To Len(sentence)
+            char2 = Mid(sentence, count2, 1)
+            If char1 = char2 
+                     Then Count = Count + 1
+
+             If Count > highest 
+                       Then
+                    highchar = char2
+                    highest = Count
+
+                End If
+          Next
+     Next
+OUTPUT UCase(highchar) , " " , "is occuring" , " " & highest , " " , "times in your sentence."

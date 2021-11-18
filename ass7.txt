@@ -1,0 +1,24 @@
+ASSIGNMENT 7
+
+DECLARE Str1, Str2 : String
+        DECLARE firstchar, samechar : CHARACTER
+        DECLARE i : Integer
+        Str1 <== ""
+        Str2 <== ""
+        firstchar <== ''
+        i <== 0
+        samechar <== ''
+        OUTPUT("Enter String: ")
+        INPUT Str1
+        firstchar = Mid(Str1, 1, 1)
+        Str2 = Str2 + firstchar
+        For i = 2 To Len(Str1)
+            samechar = Mid(Str1, i, 1)
+        If samechar = firstchar 
+                 Then
+                Str2 = Str2 + "*"
+            Else : Str2 = Str2 + samechar
+
+            End If
+        Next
+        OUTPUT("The processed String is: ", Str2)

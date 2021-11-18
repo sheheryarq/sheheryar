@@ -1,0 +1,29 @@
+ASSIGNMENT 3:
+
+DECLARE Str1, Str2 : String
+DECLARE char1, thischar, char2 : CHARACTER
+DECLARE i : Integer
+Str1 <== ""
+Str2 <== ""
+char1 <== ''
+thischar <== ''
+i <== 0
+char2 <== ''
+
+  OUTPUT "Please enter sentence: "
+     INPUT Str1
+        OUTPUT "Please enter the CHARACTER you want to remove: "
+        INPUT char1
+        OUTPUT "Please enter the CHARACTER you want to remove with: "
+        INPUT char2
+
+        For i = 1 To Length(Str1)                        
+            thischar = Mid(Str1, i, 1)
+            If thischar = char1 
+               Then
+                Str2 = Str2 + char2
+        Else : Str2 = Str2 + thischar
+
+            End If
+        Next
+       OUTPUT "Processed String is: ", Str2

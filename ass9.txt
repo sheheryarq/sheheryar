@@ -1,0 +1,28 @@
+ASSIGNMENT 9
+DECLARE Str1, Str2, Str3 : String
+        DECLARE Fchar, Schar, Fchar2, Schar2 : CHARACTER
+        DECLARE RStr1, Rstr2 : String
+        Str1 <== ""
+        Str2 <== ""
+        Fchar <== ''
+        Schar <== ''
+        Str3 <== ""
+        Schar2 <== ''
+        Fchar2 <== ''
+        RStr1 <== ""
+        Rstr2 <== ""
+        OUTPUT("Enter First Text: ")
+        INPUT Str1
+        OUTPUT("Enter Second Text: ")
+        INPUT Str2
+
+        Fchar = Mid(Str1, 1, 1)
+        Schar = Mid(Str1, 2, 1)
+        Fchar2 = Mid(Str2, 1, 1)
+        Schar2 = Mid(Str2, 2, 1)
+
+        RStr1 = Mid(Str1, 3, Len(Str1))
+        Rstr2 = Mid(Str2, 3, Len(Str2))
+
+        Str3 = Fchar2 + Schar2 + RStr1 + " " + Fchar + Schar + Rstr2
+        OUTPUT("Processed String is: ",Str3)

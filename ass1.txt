@@ -1,0 +1,34 @@
+ASSIGNMENT 1
+
+DECLARE Str1 : String
+        DECLARE alpha : String
+        DECLARE ispangram : Boolean
+        DECLARE thischar : CHARACTER
+        DECLARE i : Integer
+        DECLARE thischarpos : Integer
+        Str1 <== ""
+        alpha <== "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        ispangram <== True
+        thischar <== ''
+        i <== 0
+        thischarpos <== 0
+        OUTPUT("Enter Sentence: ")
+        INPUT Str1
+        Str1 = UPPERCase(Str1)
+        For i = 1 To Length(alpha)
+            thischar = Mid(alpha, i, 1)
+            thischarpos = LOCATE(Str1, thischar)
+            If thischarpos = 0 
+              Then
+                ispangram = False
+                Exit For
+        End If
+
+        Next
+
+        If ispangram = True 
+           Then
+            OUTPUT("The Entered Sentence contain all alphabets")
+        Else
+            OUTPUT("Entered sentence does not contain all alphabets")
+        End If
